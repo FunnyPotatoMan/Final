@@ -9,9 +9,14 @@ body {
     font-size: 1rem;
     font-family: 'Lexend Deca', Helvetica;
 }
+div {
+    margin: 0;
+}
+.center {
+    text-align: center;
+}
 
-
-
+//Style for the navigation bar at the top of every page
 #navbar {
     background-color: #6A3A3B;
     padding: 15px 6vw 15px 6vw;
@@ -21,7 +26,6 @@ body {
     border-top: 0;
     border-right: 0;
 }
-
 .button-border {
     background: #E9DDC8;
     background-origin: border-box;
@@ -32,12 +36,10 @@ body {
     transition: opacity 0.5s ease;
     opacity: 0.45;
 }
-
 .button-border:hover {
     background-image: linear-gradient(to right, #F17821, #F1A92F);
     opacity: 1;
 }
-
 .button-content {
     background-color: #E9DDC8;
     padding: 7.5px;
@@ -47,7 +49,6 @@ body {
     vertical-align: center;
     font-family: 'Lexend Deca', Helvetica;
 }
-
 #navbuttons {
     list-style-type: none;
     margin: 0 0 0 0;
@@ -55,46 +56,15 @@ body {
     display: flex;
     justify-content: center;
 }
-
-
-
-div {
-    margin: 0;
-}
-
-.title {
-    background-color: #1C4D67;
-    padding: 0;
-    border: 0;
-    margin: 0;
-}
-
-#title {
-    color: #78C1A9;
-    text-align: center;
-    font-family: 'Lexend Deca', Helvetica;
-    margin: 0;
-    padding: 1rem 0 0 0;
-    font-size: 2.5rem;
-}
-
-.subtitle {
-    color: #78C1A9;
-    text-align: center;
-    font-family: 'Lexend Deca', Helvetica;
-    font-size: 1.5rem;
-    margin: 0;
-    padding: 0 0 1rem 0;
-}
-
 #navbuttons a {
     color: black;
 }
 
+
+//Contact form page
 #contact {
     background-color: #6A3A3B;
 }
-
 #form-box {
     background-color: #E9DDC8;
     border: 5px solid #AE2D29;
@@ -106,11 +76,9 @@ div {
     text-align: center;
     font-family: 'Lexend Deca', Helvetica;
 }
-
 #contact #navbar {
     border: 10px double transparent;
 }
-
 #submit {
     background-color: #1C4D67;
     border: 5px solid transparent;
@@ -119,12 +87,10 @@ div {
     border-radius: 100vw;
     transition: border .2s;
 }
-
 #submit:hover {
     border: 5px solid #78C1A9;
     transition: border .2s;
 }
-
 #form_response {
     background-color: #E9DDC8;
     border: 5px solid #AE2D29;
@@ -134,9 +100,33 @@ div {
     font-family: 'Lexend Deca', Helvetica;
     display: none;
 }
-.center {
-    text-align: center;
+
+//Titles
+.title {
+    background-color: #1C4D67;
+    padding: 0;
+    border: 0;
+    margin: 0;
 }
+#title {
+    color: #78C1A9;
+    text-align: center;
+    font-family: 'Lexend Deca', Helvetica;
+    margin: 0;
+    padding: 1rem 0 0 0;
+    font-size: 2.5rem;
+}
+.subtitle {
+    color: #78C1A9;
+    text-align: center;
+    font-family: 'Lexend Deca', Helvetica;
+    font-size: 1.5rem;
+    margin: 0;
+    padding: 0 0 1rem 0;
+}
+
+
+//For the table
 table {
     border: 5px solid black;
     margin: 0 10vw 0 10vw;
