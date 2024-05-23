@@ -8,6 +8,7 @@
         <link rel="icon" href="Logo.png">
     </head>
     <body id="contact">
+        <!--Navigation Bar-->
         <div id="navbar">
             <ul id="navbuttons">
                 <li>
@@ -48,6 +49,8 @@
                 </li>
             </ul>
         </div>
+
+        <!--Form-->
         <div id="form-box">
             <form id="form">
                 <h2>Contact Me Here</h2>
@@ -66,23 +69,13 @@
                 <input type="submit" value="Send Message" id="submit" onclick="showMail(); ">
             </form>
         </div>
+
+        <!--This is the output-->
         <div id="form_response">
             <p style="padding: 12px; border-left: 4px solid #d0d0d0; font-style: italic;" id="message-content"></p>
             <p>Message From:<br><span id="sender-name"></span></p>
             <p id="sender-address"></p>
         </div>
-<!--
-        <script type="text/javascript"
-        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
-        </script>
-        <script type="text/javascript">
-            (function(){
-                emailjs.init({
-                publicKey: "uoUB84FgdnXapL9m0",
-                });
-            })();
-        </script>
--->
         <script>
         var form = document.getElementById('form');
 
@@ -103,22 +96,9 @@
             putName.innerHTML = name;
             putAddress.innerHTML = email;
         });
-/*
-            var templateParams = {
-                from_name: 'name',
-                content: 'message',
-                from_address: 'email',
-            };
-            emailjs.send('service_xszpbeb', 'template_txj88nm', templateParams).then(
-                (response) => {
-                    console.log('SUCCESS!', response.status, response.text);
-                };
-                (error) => {
-                    console.log('FAILED...', error);
-                };
-            );
-*/
         </script>
+
+        <!--Display only after submission-->
         <script type="text/javascript">
             function showMail() {
                 document.getElementById('form_response').style.display = 'block';
