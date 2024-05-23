@@ -15,7 +15,7 @@ div {
     text-align: center;
 }
 
-//Style for the navigation bar at the top of every page
+/*Style for the navigation bar at the top of every page*/
 #navbar {
     background-color: #6A3A3B;
     padding: 15px 6vw 15px 6vw;
@@ -60,7 +60,7 @@ div {
 }
 
 
-//Contact form page
+/*Contact form page*/
 #contact {
     background-color: #6A3A3B;
 }
@@ -100,7 +100,7 @@ div {
     display: none;
 }
 
-//Titles
+/*Titles*/
 .title {
     background-color: #1C4D67;
     padding: 0;
@@ -125,7 +125,7 @@ div {
 }
 
 
-//For the table
+/*For the table*/
 table {
     border: 5px solid black;
     margin: 0 10vw 0 10vw;
