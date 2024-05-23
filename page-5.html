@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Contact Form
+        </title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" href="Logo.png">
+    </head>
+    <body id="contact">
+        <div id="navbar">
+            <ul id="navbuttons">
+                <li>
+                    <a href="index.html">
+                        <div class="button-border">
+                            <div class="button-content">
+                                Political Compass
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="page-2.html">
+                        <div class="button-border">
+                            <div class="button-content">
+                                8 Values
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="page-3.html">
+                        <div class="button-border">
+                            <div class="button-content">
+                                9 Axes
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="page-4.html">
+                        <div class="button-border">
+                            <div class="button-content">
+                                10 Groups
+                            </div>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div id="form-box">
+            <form id="form">
+                <h2>Contact Me Here</h2>
+                <lable for="name">Full Name:</lable>
+                    <input type="text" id="name">
+                <br>
+                <p></p>
+                <lable for="email">E-Mail Address</lable>
+                    <input type="text" id="email">
+                <br>
+                <p></p>
+                <lable for="message">Message</lable>
+                    <textarea id="message"></textarea>
+                <br>
+                <p></p>
+                <input type="submit" value="Send Message" id="submit" onclick="showMail(); ">
+            </form>
+        </div>
+        <div id="form_response">
+            <p style="padding: 12px; border-left: 4px solid #d0d0d0; font-style: italic;" id="message-content"></p>
+            <p>Message From:<br><span id="sender-name"></span></p>
+            <p id="sender-address"></p>
+        </div>
+<!--
+        <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+        </script>
+        <script type="text/javascript">
+            (function(){
+                emailjs.init({
+                publicKey: "uoUB84FgdnXapL9m0",
+                });
+            })();
+        </script>
+-->
+        <script>
+        var form = document.getElementById('form');
+
+        form.addEventListener("submit", function(event){
+            event.preventDefault();
+            
+            var name = document.getElementById("name").value;
+            var message = document.getElementById("message").value;
+            var email = document.getElementById("email").value;
+            
+            var mail = document.getElementById("form_response");
+            
+            var putMessage = document.getElementById("message-content");
+            var putName = document.getElementById("sender-name");
+            var putAddress = document.getElementById("sender-address");
+            
+            putMessage.innerHTML = message;
+            putName.innerHTML = name;
+            putAddress.innerHTML = email;
+        });
+/*
+            var templateParams = {
+                from_name: 'name',
+                content: 'message',
+                from_address: 'email',
+            };
+            emailjs.send('service_xszpbeb', 'template_txj88nm', templateParams).then(
+                (response) => {
+                    console.log('SUCCESS!', response.status, response.text);
+                };
+                (error) => {
+                    console.log('FAILED...', error);
+                };
+            );
+*/
+        </script>
+        <script type="text/javascript">
+            function showMail() {
+                document.getElementById('form_response').style.display = 'block';
+            }
+        </script>
+    </body>
+</html>
